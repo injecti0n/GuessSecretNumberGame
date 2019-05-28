@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/infoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's start the game!"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/inputBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type your secret number"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/Guess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d3ff99"
+        android:text="Start the Game!"
+        android:onClick="onClick_guessNumber"
+        android:textSize="10pt" />
+
+    <Button
+        android:id="@+id/SetSecretNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set as secret number"
+        android:onClick="onClick_setSecretNumber"
+        android:textAlignment="center"
+        android:background="#F44336"/>
+</LinearLayout>
